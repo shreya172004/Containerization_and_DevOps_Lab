@@ -54,7 +54,7 @@ Distribution successfully installed. It can be launched via 'wsl.exe -d Ubuntu'
 Launching Ubuntu...  
 Provisioning the new WSL instance Ubuntu  
 This might take a while...  
-Create a default Unix user account: mayank  
+Create a default Unix user account: shreya
 New password:  
 Retype new password:  
 passwd: password updated successfully  
