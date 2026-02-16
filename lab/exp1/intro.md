@@ -72,7 +72,7 @@ See "man sudo root" for details.
 
 Restart the system after installation completes.
 
-# Step 2: Verify WSL Installation
+# Step 1: Verify WSL Installation
 
 After restart, open PowerShell and execute:
 
@@ -95,7 +95,7 @@ NAME STATE VERSION
 Ubuntu Running 2
 ```
 
-# Step 3: Check and Change WSL Version
+# Step 2: Check and Change WSL Version
 
 To convert Ubuntu to WSL 2:
 
@@ -114,7 +114,7 @@ PS C:\WINDOWS\system32> wsl --set-default Ubuntu
 The operation completed successfully.
 ```
 
-# Step 4: Check Installed Linux Distributions
+# Step 3: Check Installed Linux Distributions
 
 To list all available and installed distributions:
 
@@ -128,7 +128,7 @@ wsl --install -d Debian
 PS C:\WINDOWS\system32> wsl --list --all Windows Subsystem for Linux Distributions: Ubuntu (Default) docker-osktop PS C:\WINDOWS\system32>
 ```
 
-# Step 5: Set Default Linux Distribution
+# Step 4: Set Default Linux Distribution
 
 To set Ubuntu as default:
 
@@ -141,7 +141,7 @@ Ws1
 PS C:\WINDOWS\system32> wsl --set-default Ubuntu  
 The operation completed successfully.
 
-# Step 6: Fix WSL 2 Kernel Update Issue (If Occurs)
+# Step 5: Fix WSL 2 Kernel Update Issue (If Occurs)
 
 If error appears:
 
@@ -153,7 +153,7 @@ wsl --set-version Ubuntu 2
 
 If still unresolved, install the latest WSL kernel update from Microsoft and restart.
 
-# Step 7: Common Errors and Solutions
+# Step 6: Common Errors and Solutions
 
 Error: 'wsl' is not recognized as a command
 
@@ -167,7 +167,7 @@ dism.exe /online /enable-feature / featurename: VirtualMachine Platform/all/nore
 
 Restart the system.
 
-# Step 8: Virtualization Disabled Error (0x80370102)
+# Step 7: Virtualization Disabled Error (0x80370102)
 
 If virtualization is disabled:
 
@@ -176,7 +176,7 @@ Restart PC
 Enable Intel VT-x / AMD-V  
 Save & Restart
 
-# Step 9: Useful WSL Commands
+# Step 8: Useful WSL Commands
 
 # Command
 
