@@ -121,7 +121,8 @@ docker pull nginx:latest
 ```bash
 docker run -d --name nginx-official -p 8080:80 nginx
 ```
-![](RunContainer.png)
+![](RunContainer1.png)
+
 ## Step 3: Verify
 
 ```bash
