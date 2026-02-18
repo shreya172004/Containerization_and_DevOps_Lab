@@ -462,3 +462,6 @@ docker image prune
 # Remove everything unused
 docker system prune -a
 ```
+![](cleanup.png)  
+
+---
