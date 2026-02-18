@@ -367,7 +367,8 @@ EXPOSE 3000
 
 CMD ["node", "app.js"]
 ```
-![](nanodockerfilecode.png)
+![](nanonodedockerfilecode.png)
+
 
 ### **Step 3: Build and Run**
 ```bash
