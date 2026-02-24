@@ -7,7 +7,7 @@ School of Computer Science,
 
 University of Petroleum and Energy Studies, Dehradun
 
-## **Part 1: Docker Volumes - Persistent Data Storage
+## **Part 1: Docker Volumes - Persistent Data Storage**
 
 ### **Lab 1: Understanding Data Persistence**
 
@@ -27,6 +27,7 @@ docker exec test-container cat /data/message.txt
 # ERROR: File doesn't exist! Data was lost.
 
 ```
+![](2.png)
 ### **Lab 2: Volume Types**
 **1. Anonymous Volumes:**
 ```bash
@@ -41,6 +42,7 @@ docker volume ls
 # Inspect container to see volume mount
 docker inspect web1 | grep -A 5 Mounts
 ```
+![](anonymous-volumes.png)
 **2. Named Volumes:**
 
 ```bash
@@ -57,6 +59,7 @@ docker volume ls
 # Inspect volume
 docker volume inspect mydata
 ```
+![](named_volumes.png)
 
 **3. Bind Mounts:**
 
@@ -74,6 +77,7 @@ echo "From Host" > ~/myapp-data/host-file.txt
 docker exec web3 cat /app/data/host-file.txt
 # Shows: From Host
 ```
+![](bind_mounts.png)
 
 ### **Lab 3: Practical Volume Examples**
 **Example 1: Database with Persistent Storage**
@@ -98,7 +102,9 @@ docker run -d \
   mysql:8.0
 # Data is preserved!
 ```
-**Example 2:Web App with Cnfiguration Files**
+![](lab3ex1.png)
+
+**Example 2:Web App with Configuration Files**
 
 ```bash
 # Create config directory
@@ -123,6 +129,8 @@ docker run -d \
 # Test
 curl http://localhost:8080
 ```
+![](lab3ex2.png) 
+
 ### **Lab 4: Practical Volume Examples**
 
 ```bash
@@ -144,3 +152,4 @@ docker volume rm volume-name
 # Copy files to/from volume
 docker cp local-file.txt container-name:/path/in/volume
 ```
+![](lab4.png)
